@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  top:0;
+}
+body {
+    background:#f2f2f2;
+  }
+
+  /*header*/
+  .header{
+    background: #0d023b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo{
+    width:30px;
+    height: 30px;
+  }
+  .logo:hover{
+    cursor: pointer;
+  }
+  h1{
+    text-align: center;
+    font-size: 20px;
+    padding-right: 10px ;
+    color: #ccc;
+    
+    
+  }
+  
+  /*encriptador*/
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background: #f2f2f2;
+    
+  }
+  
+  .input , .textarea{
+    height: 400px;
+  }
+  button {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+    background-color:#0d023b ;
+    border: none;
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  button:hover {
+    background-color: #1437ac;
+  }
+
+  @media (min-width: 768px) {
+    .encriptador{
+      
+      
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+  
+    .input,
+    .textarea {
+      font-size: 18px;
+      grid-column: span 2;
+      
+    }
+  
+    button {
+      grid-column: span 1;
+    }
+
+    .input , .textarea{
+      height: 450px;
+    }
+   
+  }
+  /*footer*/
+  .menu-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: #0d023b;
+    width: 100%;
+    
+  }
+  .menu-item-footer{
+    list-style: none;
+    
+  }
+  .menu-item-link{
+    padding: 0 10px;
+  }
+  .menu-item-footer:hover{
+    filter: invert(1);
+  }
+  .menu-item-img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+  }

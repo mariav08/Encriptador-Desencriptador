@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header">
+      <img src="alura.png" alt="logo de alura" class="logo">
+        <h1>Encriptador/Desencriptador</h1>
+    </header>
+
+ <section class="encriptador">
+   <article class="encriptar">
+        <textarea id="inputText" class="input" placeholder="Escribe tu texto aquí" oninput="validarTexto()"></textarea>
+         <button onclick="encriptar()">Encriptar</button>
+          <button onclick="desencriptar()">Desencriptar</button>
+   </article>
+  
+   <article class="desencriptar">
+         <textarea placeholder="Resultado" id="outputText" class="textarea"></textarea>
+
+         <button onclick="copiar()">Copiar</button>
+   </article>
+ </section>
+
+  <footer>
+
+    <ul class="menu-footer">
+      <li class="menu-item-footer"><a href="https://github.com/mariav08" class="menu-item-link"><img src="github.png" alt="logo de github" class="menu-item-img"></a></li>
+      <li class="menu-item-footer"><a href="" class="menu-item-link"><img src="youtube.png" alt="logo de youtube" class="menu-item-img"></a></li>
+      <li class="menu-item-footer"><a href="" class="menu-item-link"><img src="facebook.png" alt="logo de facebook" class="menu-item-img"></a></li>
+      <li class="menu-item-footer"><a href="" class="menu-item-link"><img src="instagram.png" alt="logo de instagram" class="menu-item-img"></a></li>
+    </ul>
+  </footer>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
